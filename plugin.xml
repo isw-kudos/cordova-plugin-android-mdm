@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+        id="au.net.isw.androidmdm"
+        version="0.0.1">
+
+  <name>Android MDM Plugin</name>
+
+	<engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/androidmdm.js" target="js/androidmdm.js"/>
+
+  <js-module src="www/androidmdm.js" name="androidmdm">
+    <clobbers target="androidmdm" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="AndroidMDM">
+        <param name="android-package" value="au.net.isw.androidmdm"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/AndroidMDM.java" target-dir="src/au/net/isw/androidmdm/"/>
+  </platform>
+</plugin>
