@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-android-mdm",
+  "version": "0.0.1",
+  "description": "Plugin to support Managed Configuration for Android through RestrictionsManager or something",
+  "cordova": {
+    "id": "cordova-plugin-android-mdm",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mircoc/cordova-plugin-settings-hook.git"
+  },
+  engines: {
+    cordovaDependencies: {
+        "0.0.1": { "cordova-plugin-settings-hook": "0.2.3"},
+      }
+  },
+  "keywords": [
+    "cordova", "managed", "configuration", "ecosystem:cordova",
+    "MDM", "MaaS360",
+  ],
+  "author": "Mark Donnellon",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/markdon/cordova-plugin-android-mdm/issues"
+  },
+  "homepage": "https://github.com/markdon/cordova-plugin-android-mdm"
+}
