@@ -15,7 +15,7 @@
   <js-module src="www/androidmdm.js" name="androidmdm">
     <clobbers target="androidmdm" />
   </js-module>
-
+	<dependency id="cordova-plugin-settings-hook" version="0.2.3"  />
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
