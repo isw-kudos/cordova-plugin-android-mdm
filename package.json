@@ -10,12 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mircoc/cordova-plugin-settings-hook.git"
+    "url": "git+https://github.com/markdon/cordova-plugin-android-mdm.git"
   },
-  engines: {
-    cordovaDependencies: {
-        //dependencies using package.json are specified something like this
-        //"0.0.1": { "cordova-plugin-settings-hook": "0.2.3"},
+  "engines": {
+    "cordovaDependencies": {
+        
       }
   },
   "keywords": [

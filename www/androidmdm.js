@@ -1,4 +1,6 @@
-/*global cordova, module*/
+/*global cordova, module, console*/
+
+
 
 module.exports = {
     greet: function (name, successCallback, errorCallback) {
@@ -7,5 +9,9 @@ module.exports = {
 
         cordova.exec(successCallback, errorCallback, "AndroidMDM", "greet", [name]);
         console.log("androidmdm.js function end");
+    },
+
+    logRestrictions: function (successCallback, errorCallback) {
+        cordova.exec(successCallback, errorCallback, "AndroidMDM", "logRestrictions", []);
     }
 };
