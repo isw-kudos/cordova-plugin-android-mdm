@@ -54,7 +54,9 @@ public class AndroidMDM extends CordovaPlugin {
         if(manRests!=null) returnStr += manRests.toString();
         else returnStr += "null";
 
-        Log.d(TAG, funcName + returnStr);
+        returnStr += "\n\nhasRestrictionsProvider: " + restMgr.hasRestrictionsProvider();
+
+        Log.d(TAG, returnStr);
         return returnStr;
     }
 
