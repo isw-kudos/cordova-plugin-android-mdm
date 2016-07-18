@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-android-mdm",
   "version": "0.0.1",
-  "description": "Plugin to support Managed Configuration for Android through RestrictionsManager or something",
+  "description": "Plugin to support Managed Configuration for Android through RestrictionsManager and Android for Work",
   "cordova": {
     "id": "cordova-plugin-android-mdm",
     "platforms": [
@@ -14,7 +14,7 @@
   },
   "engines": {
     "cordovaDependencies": {
-        
+
       }
   },
   "keywords": [

@@ -33,10 +33,7 @@
 	<hook type="after_prepare" src="scripts/copy_files.js" />
 
 	<platform name="android">
-		<!--	We use cordova-plugin-settings-hook to make it easy to add to AndroidManifest.xml from your apps config.xml
-					but it can also support iOS -Info.plist if included in the platform
-		<dependency id="cordova-plugin-settings-hook" version="0.2.3"  />-->
-		
+
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="AndroidMDM">
 				<param name="android-package" value="au.net.isw.androidmdm.AndroidMDM"/>
