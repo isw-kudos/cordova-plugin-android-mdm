@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-android-mdm"
+	version="0.0.1">
+
+	<name>Android MDM Plugin</name>
+	<info>
+		Additional information provided to users.
+		This is useful when you require extra steps that can't be easily automated or are beyond the CLI's scope.
+		The contents of this tag gets printed out when the CLI installs the plugin.
+
+		Creating app_restrictions xml, string resources etc. Or if we get around to it, how to create data for
+		a cross platform version.
+	</info>
+
+	<engines>
+		<engine name="cordova" version=">=3.4.0"/>
+	</engines>
+
+	<asset src="www/androidmdm.js" target="js/androidmdm.js"/>
+
+	<js-module src="www/androidmdm.js" name="androidmdm">
+		<clobbers target="androidmdm" />
+	</js-module>
+
+	<!-- As of Cordova 6.x dependencies are specified with package.json, but I couldn't make that work :s -->
+
+	<!--
+		copies files from one place to another within our project
+		e.g. the app_restrictions.xml file mentioned below goes into platform/android/res/xml/
+	-->
+	<hook type="after_prepare" src="scripts/copy_files.js" />
+
+	<platform name="android">
+
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="AndroidMDM">
+				<param name="android-package" value="au.net.isw.androidmdm.AndroidMDM"/>
+			</feature>
+		</config-file>
+
+
+
+
+		<config-file target="AndroidManifest.xml" parent="/manifest/application/">
+			<meta-data android:name="android.content.APP_RESTRICTIONS" android:resource="@xml/app_restrictions" />
+		</config-file>
+
+
+		<source-file src="src/android/AndroidMDM.java" target-dir="src/au/net/isw/androidmdm/"/>
+	</platform>
+</plugin>
