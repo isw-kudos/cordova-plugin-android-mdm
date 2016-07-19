@@ -10,19 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/markdon/cordova-plugin-android-mdm.git"
+    "url": "https://github.com/markdon/cordova-plugin-android-mdm.git"
   },
   "engines": {
-    "cordovaDependencies": {
 
-      }
   },
   "keywords": [
     "cordova", "managed", "configuration", "ecosystem:cordova",
     "MDM", "MaaS360",
   ],
   "author": "Mark Donnellon",
-  "license": "",
+  "license": "Apache",
   "bugs": {
     "url": "https://github.com/markdon/cordova-plugin-android-mdm/issues"
   },
