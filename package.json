@@ -1,28 +1,30 @@
 {
   "name": "cordova-plugin-android-mdm",
   "version": "0.0.1",
-  "description": "Plugin to support Managed Configuration for Android through RestrictionsManager and Android for Work",
-  "cordova": {
-    "id": "cordova-plugin-android-mdm",
-    "platforms": [
-      "android"
-    ]
+  "description": "Cordova plugin to support Managed Configuration with Android for Work",
+  "main": "www/androidmdm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/markdon/cordova-plugin-android-mdm.git"
-  },
-  "engines": {
-
+    "url": "git+https://github.com/isw-kudos/cordova-plugin-android-mdm.git"
   },
   "keywords": [
-    "cordova", "managed", "configuration", "ecosystem:cordova",
-    "MDM", "MaaS360",
+    "cordova",
+    "managed",
+    "configuration",
+    "ecosystem:cordova",
+    "MDM",
+    "MaaS360"
   ],
-  "author": "Mark Donnellon",
-  "license": "Apache",
-  "bugs": {
-    "url": "https://github.com/markdon/cordova-plugin-android-mdm/issues"
+  "dependencies":{
+    "xmlmerge-js":"*"
   },
-  "homepage": "https://github.com/markdon/cordova-plugin-android-mdm"
+  "author": "Mark Donnellon <mdonnellon@isw.net.au> (https://www.linkedin.com/in/markdonnellon)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/isw-kudos/cordova-plugin-android-mdm/issues"
+  },
+  "homepage": "https://github.com/isw-kudos/cordova-plugin-android-mdm#readme"
 }

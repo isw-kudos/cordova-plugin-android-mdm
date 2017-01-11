@@ -5,14 +5,7 @@
 	version="0.0.1">
 
 	<name>Android MDM Plugin</name>
-	<info>
-		Additional information provided to users.
-		This is useful when you require extra steps that can't be easily automated or are beyond the CLI's scope.
-		The contents of this tag gets printed out when the CLI installs the plugin.
-
-		Creating app_restrictions xml, string resources etc. Or if we get around to it, how to create data for
-		a cross platform version.
-	</info>
+	<info></info>
 
 	<engines>
 		<engine name="cordova" version=">=3.4.0"/>
@@ -33,7 +26,6 @@
 	<hook type="after_prepare" src="scripts/copy_files.js" />
 
 	<platform name="android">
-
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="AndroidMDM">
 				<param name="android-package" value="au.net.isw.androidmdm.AndroidMDM"/>
