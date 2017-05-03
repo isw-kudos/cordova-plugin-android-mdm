@@ -32,7 +32,7 @@ public class AndroidMDM extends CordovaPlugin{
         if(DEBUG)Log.v(TAG, funcName + " start ");
         if(DEBUG)Log.d(TAG, "execute with action: " + action);
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP){
-          Log.w("cordova-plugin-android-mdm requires Android API level "+android.os.Build.VERSION_CODES.LOLLIPOP+", this device is running " + android.os.Build.VERSION.SDK_INT + ". Managed config not loaded.");
+          Log.w(TAG, "requires Android API level "+android.os.Build.VERSION_CODES.LOLLIPOP+", this device is running " + android.os.Build.VERSION.SDK_INT + ". Managed config not loaded.");
           callbackContext.error("");
           return false;
         }
