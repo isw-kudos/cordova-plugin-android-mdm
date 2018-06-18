@@ -1,12 +1,12 @@
 # Cordova Plugin for Configuration from Android for Work
 
 ## How to Use
-Create an XML file at <project root>/resources/android/res/xml/app_restrictions.xml which describes the restrictions you want to make available in your app. See the XML definition [here](https://developer.android.com/work/managed-configurations.html).
+Create an XML file at <project root>/resources/android/app_restrictions.xml which describes the restrictions you want to make available in your app. See the XML definition [here](https://developer.android.com/work/managed-configurations.html).
 
 NOTE: This plugin does not yet come with a way to create resource strings for the description attribute and use of a string resource for the description attribute is compulsory if used. So, you can not yet use the description attribute unless you figure out your own way of adding entries to platform/android/res/xml/strings.xml for you to reference.
 
 This file (only) is automatically copied into the corresponding directory under platform after a Cordova prepare.
-If you want to keep the file elsewhere, ensure app_restrictions.xml is copied to platform/android/res/xml/ or at least exists before attempting to compile. platform/android/res/xml/app_restrictions.xml may be deleted when preparing.
+If you want to keep the file elsewhere, ensure app_restrictions.xml is copied to platform/android/app/src/main/res/xml/ or at least exists before attempting to compile. platform/android/app/src/main/res/xml/app_restrictions.xml may be deleted when preparing.
 This plugin will automatically add the required reference to app_restrictions.xml in AndroidManifest.xml.
 
 In your Cordova JS you can use the below functions to get your application restrictions.

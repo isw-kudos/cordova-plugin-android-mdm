@@ -75,7 +75,6 @@ public class AndroidMDM extends CordovaPlugin{
     }
     //Check for changes to restrictions
 
-
     /**
      * Get app restrictions as set by Device Policy Controller(DPC)/Enterprise Mobility Management (EMM) provider
      * If a value is not specified by DCP/EMM, it will not appear in returned JSON
@@ -83,8 +82,6 @@ public class AndroidMDM extends CordovaPlugin{
      * Note:
      * The managed configurations Bundle contains one item for every configuration that has been *explicitly* set by a managed configurations provider.
      * However, you cannot assume that a configuration will be present in the bundle just because you defined a default value in the managed configurations XML file.
-     *
-     *
      */
     private JSONObject getAppRestrictions(){
         if(DEBUG)Log.v(TAG, "getAppRestrictions start");
@@ -146,8 +143,6 @@ public class AndroidMDM extends CordovaPlugin{
 
     /**
      * Get restrictions from restrictions configuration set in AndroidManifest.
-     *
-     *
      * @return
      * @author mdonnellon
      */
@@ -280,6 +275,4 @@ public class AndroidMDM extends CordovaPlugin{
     @Override
     public void onDestroy() {
     }
-
-
 }

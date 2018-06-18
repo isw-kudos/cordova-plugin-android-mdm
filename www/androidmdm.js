@@ -1,7 +1,4 @@
 /*global cordova, module, console*/
-
-
-
 module.exports = {
     addRestrictionListener: function (callback) {
         "use strict";

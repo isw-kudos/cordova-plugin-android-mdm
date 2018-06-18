@@ -21,7 +21,7 @@
 
 	<!--
 		copies files from one place to another within our project
-		e.g. the app_restrictions.xml file mentioned below goes into platform/android/res/xml/
+		e.g. the app_restrictions.xml file mentioned below goes into platform/android/app/src/main/res/xml/
 	-->
 	<hook type="after_prepare" src="scripts/copy_files.js" />
 
@@ -32,13 +32,9 @@
 			</feature>
 		</config-file>
 
-
-
-
 		<config-file target="AndroidManifest.xml" parent="/manifest/application/">
 			<meta-data android:name="android.content.APP_RESTRICTIONS" android:resource="@xml/app_restrictions" />
 		</config-file>
-
 
 		<source-file src="src/android/AndroidMDM.java" target-dir="src/au/net/isw/androidmdm/"/>
 	</platform>

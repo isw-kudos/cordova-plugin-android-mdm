@@ -21,7 +21,7 @@
 // on each developer's box.
 module.exports = function(context){
   var filestocopy = [{
-      "resources/android/res/xml/app_restrictions.xml" : "platforms/android/res/xml/app_restrictions.xml"
+      "resources/android/app_restrictions.xml" : "platforms/android/app/src/main/res/xml/app_restrictions.xml"
   } ];
 
   // no need to configure below
