@@ -2,13 +2,14 @@
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="cordova-plugin-android-mdm"
-	version="0.0.1">
+	version="0.2.0">
 
-	<name>Android MDM Plugin</name>
-	<info></info>
+	<name>Android for Work Configuration</name>
+	<info>Cordova plugin to retrieve configuration from Android for Work as JSON</info>
 
 	<engines>
 		<engine name="cordova" version=">=3.4.0"/>
+		<engine name="cordova-android" version=">=7.0.0" />
 	</engines>
 
 	<asset src="www/androidmdm.js" target="js/androidmdm.js"/>
@@ -16,8 +17,6 @@
 	<js-module src="www/androidmdm.js" name="androidmdm">
 		<clobbers target="androidmdm" />
 	</js-module>
-
-	<!-- As of Cordova 6.x dependencies are specified with package.json, but I couldn't make that work :s -->
 
 	<!--
 		copies files from one place to another within our project

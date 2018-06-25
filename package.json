@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-android-mdm",
-  "version": "0.0.1",
-  "description": "Cordova plugin to support Managed Configuration with Android for Work",
+  "version": "0.2.0",
+  "description": "Cordova plugin to retrieve configuration from Android for Work as JSON",
   "main": "www/androidmdm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,8 @@
     "configuration",
     "ecosystem:cordova",
     "MDM",
-    "MaaS360"
+    "MaaS360",
+    "AppConfig"
   ],
   "dependencies":{
     "xmlmerge-js":"*"
